@@ -13,6 +13,16 @@ Cursor → siril-mcp (stdio) → ~/Library/Application Support/siril-mcp/bridge.
 
 ## Setup
 
+### Easiest: ask your LLM
+
+You can typically just ask your favorite LLM (Cursor, Claude, Codex, etc.) to do the whole install for you. Something like:
+
+> Clone https://github.com/NickLarsen/siril-mcp, install it, register it as an MCP server in Cursor, install the Siril Scripts launcher, and tell me how to start the bridge.
+
+In practice that covers cloning the repo, creating the venv, `pip install -e .`, writing the Cursor MCP config, and running `./scripts/install_bridge_to_siril_scripts.sh` so **Start_MCP_Bridge** shows up in Siril. You still need Siril open and the bridge started (Scripts menu or `pyscript -async`) before the tools work—your LLM can walk you through that too, and can help with optional extras like StarNet.
+
+Manual steps below if you prefer to do it yourself.
+
 ### 1. Install the MCP package
 
 ```bash
