@@ -1,0 +1,27 @@
+[project]
+name = "siril-mcp"
+version = "0.1.0"
+description = "Siril integration through the Model Context Protocol (Option B bridge)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Nick" }]
+dependencies = [
+    "mcp[cli]>=1.3.0,<2",
+    "Pillow>=10.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0", "numpy>=1.26"]
+[project.scripts]
+siril-mcp = "siril_mcp.server:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]

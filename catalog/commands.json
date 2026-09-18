@@ -1,0 +1,960 @@
+{
+  "source": "siril-1.4.4/src/core/command_list.h",
+  "count": 159,
+  "commands": [
+    {
+      "name": "addmax",
+      "nbarg": 1,
+      "usage": "addmax filename",
+      "scriptable": false
+    },
+    {
+      "name": "asinh",
+      "nbarg": 1,
+      "usage": "asinh [-human] stretch { [offset] [-clipmode=] }",
+      "scriptable": true
+    },
+    {
+      "name": "autoghs",
+      "nbarg": 2,
+      "usage": "autoghs [-linked] shadowsclip stretchamount [-b=] [-hp=] [-lp=] [-clipmode=]",
+      "scriptable": true
+    },
+    {
+      "name": "autostretch",
+      "nbarg": 0,
+      "usage": "autostretch [-linked] [shadowsclip [targetbg]]",
+      "scriptable": true
+    },
+    {
+      "name": "bg",
+      "nbarg": 0,
+      "usage": "bg",
+      "scriptable": true
+    },
+    {
+      "name": "bgnoise",
+      "nbarg": 0,
+      "usage": "bgnoise",
+      "scriptable": true
+    },
+    {
+      "name": "binxy",
+      "nbarg": 1,
+      "usage": "binxy coefficient [-sum]",
+      "scriptable": true
+    },
+    {
+      "name": "boxselect",
+      "nbarg": 0,
+      "usage": "boxselect [-clear] [x y width height]",
+      "scriptable": true
+    },
+    {
+      "name": "calibrate",
+      "nbarg": 1,
+      "usage": "calibrate sequencename [-bias=filename] [-dark=filename] [-flat=filename] [-cc=dark [siglo sighi] || -cc=bpm bpmfile] [-cfa] [-debayer] [-fix_xtrans] [-equalize_cfa] [-opt[=exp]] [-all] [-prefix=] [-fitseq]",
+      "scriptable": true
+    },
+    {
+      "name": "calibrate_single",
+      "nbarg": 1,
+      "usage": "calibrate_single imagename [-bias=filename] [-dark=filename] [-flat=filename] [-cc=dark [siglo sighi] || -cc=bpm bpmfile] [-cfa] [-debayer] [-fix_xtrans] [-equalize_cfa] [-opt[=exp]] [-prefix=]",
+      "scriptable": true
+    },
+    {
+      "name": "capabilities",
+      "nbarg": 0,
+      "usage": "capabilities",
+      "scriptable": true
+    },
+    {
+      "name": "catsearch",
+      "nbarg": 1,
+      "usage": "catsearch name",
+      "scriptable": true
+    },
+    {
+      "name": "ccm",
+      "nbarg": 9,
+      "usage": "ccm m00 m01 m02 m10 m11 m12 m20 m21 m22 [gamma]",
+      "scriptable": true
+    },
+    {
+      "name": "cd",
+      "nbarg": 1,
+      "usage": "cd directory",
+      "scriptable": true
+    },
+    {
+      "name": "cdg",
+      "nbarg": 0,
+      "usage": "cdg",
+      "scriptable": true
+    },
+    {
+      "name": "clahe",
+      "nbarg": 2,
+      "usage": "clahe cliplimit tileSize",
+      "scriptable": true
+    },
+    {
+      "name": "clear",
+      "nbarg": 0,
+      "usage": "clear",
+      "scriptable": false
+    },
+    {
+      "name": "clearstar",
+      "nbarg": 0,
+      "usage": "clearstar",
+      "scriptable": false
+    },
+    {
+      "name": "close",
+      "nbarg": 0,
+      "usage": "close",
+      "scriptable": true
+    },
+    {
+      "name": "conesearch",
+      "nbarg": 0,
+      "usage": "conesearch [limit_magnitude] [-cat=] [-phot] [-obscode=] [-tag={on|off}] [-log={on|off}] [-trix=] [-out=]",
+      "scriptable": true
+    },
+    {
+      "name": "convert",
+      "nbarg": 1,
+      "usage": "convert basename [-debayer] [-fitseq] [-ser] [-start=index] [-out=]",
+      "scriptable": true
+    },
+    {
+      "name": "convertraw",
+      "nbarg": 1,
+      "usage": "convertraw basename [-debayer] [-fitseq] [-ser] [-start=index] [-out=]",
+      "scriptable": true
+    },
+    {
+      "name": "cosme",
+      "nbarg": 1,
+      "usage": "cosme [filename].lst",
+      "scriptable": true
+    },
+    {
+      "name": "cosme_cfa",
+      "nbarg": 1,
+      "usage": "cosme_cfa [filename].lst",
+      "scriptable": true
+    },
+    {
+      "name": "crop",
+      "nbarg": 0,
+      "usage": "crop [x y width height]",
+      "scriptable": true
+    },
+    {
+      "name": "ddp",
+      "nbarg": 3,
+      "usage": "ddp level coef sigma",
+      "scriptable": false
+    },
+    {
+      "name": "denoise",
+      "nbarg": 0,
+      "usage": "denoise [-nocosmetic] [-mod=m] [ -vst | -da3d | -sos=n [-rho=r] ] [-indep]",
+      "scriptable": true
+    },
+    {
+      "name": "dir",
+      "nbarg": 0,
+      "usage": "dir",
+      "scriptable": false
+    },
+    {
+      "name": "disto",
+      "nbarg": 0,
+      "usage": "disto [clear]",
+      "scriptable": false
+    },
+    {
+      "name": "dumpheader",
+      "nbarg": 0,
+      "usage": "dumpheader",
+      "scriptable": true
+    },
+    {
+      "name": "entropy",
+      "nbarg": 0,
+      "usage": "entropy",
+      "scriptable": true
+    },
+    {
+      "name": "epf",
+      "nbarg": 0,
+      "usage": "epf [-guided] [-d=] [-si=] [-ss=] [-mod=] [-guideimage=]",
+      "scriptable": true
+    },
+    {
+      "name": "exit",
+      "nbarg": 0,
+      "usage": "exit",
+      "scriptable": true
+    },
+    {
+      "name": "extract",
+      "nbarg": 1,
+      "usage": "extract NbPlans",
+      "scriptable": true
+    },
+    {
+      "name": "extract_Green",
+      "nbarg": 0,
+      "usage": "extract_Green",
+      "scriptable": true
+    },
+    {
+      "name": "extract_Ha",
+      "nbarg": 0,
+      "usage": "extract_Ha [-upscale]",
+      "scriptable": true
+    },
+    {
+      "name": "extract_HaOIII",
+      "nbarg": 0,
+      "usage": "extract_HaOIII [-resample=]",
+      "scriptable": true
+    },
+    {
+      "name": "fdiv",
+      "nbarg": 2,
+      "usage": "fdiv filename scalar",
+      "scriptable": true
+    },
+    {
+      "name": "ffill",
+      "nbarg": 1,
+      "usage": "ffill value [x y width height]",
+      "scriptable": true
+    },
+    {
+      "name": "fftd",
+      "nbarg": 2,
+      "usage": "fftd modulus phase",
+      "scriptable": true
+    },
+    {
+      "name": "ffti",
+      "nbarg": 2,
+      "usage": "ffti modulus phase",
+      "scriptable": true
+    },
+    {
+      "name": "fill",
+      "nbarg": 1,
+      "usage": "fill value [x y width height]",
+      "scriptable": true
+    },
+    {
+      "name": "find_cosme",
+      "nbarg": 2,
+      "usage": "find_cosme cold_sigma hot_sigma",
+      "scriptable": true
+    },
+    {
+      "name": "find_cosme_cfa",
+      "nbarg": 2,
+      "usage": "find_cosme_cfa cold_sigma hot_sigma",
+      "scriptable": true
+    },
+    {
+      "name": "find_hot",
+      "nbarg": 3,
+      "usage": "find_hot filename cold_sigma hot_sigma",
+      "scriptable": true
+    },
+    {
+      "name": "findcompstars",
+      "nbarg": 1,
+      "usage": "findcompstars star_name [-narrow|-wide] [-catalog={nomad|apass}] [-dvmag=3] [-dbv=0.5] [-emag=0.03] [-out=nina_file.csv]",
+      "scriptable": true
+    },
+    {
+      "name": "findstar",
+      "nbarg": 0,
+      "usage": "findstar [-out=] [-layer=] [-maxstars=]",
+      "scriptable": true
+    },
+    {
+      "name": "fix_xtrans",
+      "nbarg": 0,
+      "usage": "fix_xtrans",
+      "scriptable": true
+    },
+    {
+      "name": "fixbanding",
+      "nbarg": 2,
+      "usage": "fixbanding amount sigma [-vertical]",
+      "scriptable": true
+    },
+    {
+      "name": "fmedian",
+      "nbarg": 2,
+      "usage": "fmedian ksize modulation",
+      "scriptable": true
+    },
+    {
+      "name": "fmul",
+      "nbarg": 1,
+      "usage": "fmul scalar",
+      "scriptable": true
+    },
+    {
+      "name": "gauss",
+      "nbarg": 1,
+      "usage": "gauss sigma",
+      "scriptable": true
+    },
+    {
+      "name": "get",
+      "nbarg": 1,
+      "usage": "get { -a | -A | variable }",
+      "scriptable": true
+    },
+    {
+      "name": "getref",
+      "nbarg": 1,
+      "usage": "getref sequencename",
+      "scriptable": true
+    },
+    {
+      "name": "ght",
+      "nbarg": 1,
+      "usage": "ght -D= [-B=] [-LP=] [-SP=] [-HP=] [-clipmode=] [-human | -even | -independent | -sat] [channels]",
+      "scriptable": true
+    },
+    {
+      "name": "grey_flat",
+      "nbarg": 0,
+      "usage": "grey_flat",
+      "scriptable": true
+    },
+    {
+      "name": "help",
+      "nbarg": 0,
+      "usage": "help [command]",
+      "scriptable": true
+    },
+    {
+      "name": "histo",
+      "nbarg": 1,
+      "usage": "histo channel (channel=0, 1, 2 with 0: red, 1: green, 2: blue)",
+      "scriptable": true
+    },
+    {
+      "name": "iadd",
+      "nbarg": 1,
+      "usage": "iadd filename",
+      "scriptable": true
+    },
+    {
+      "name": "icc_assign",
+      "nbarg": 1,
+      "usage": "icc_assign profile",
+      "scriptable": true
+    },
+    {
+      "name": "icc_convert_to",
+      "nbarg": 1,
+      "usage": "icc_convert_to profile [intent]",
+      "scriptable": true
+    },
+    {
+      "name": "icc_remove",
+      "nbarg": 0,
+      "usage": "icc_remove",
+      "scriptable": true
+    },
+    {
+      "name": "idiv",
+      "nbarg": 1,
+      "usage": "idiv filename",
+      "scriptable": true
+    },
+    {
+      "name": "imul",
+      "nbarg": 1,
+      "usage": "imul filename",
+      "scriptable": true
+    },
+    {
+      "name": "inspector",
+      "nbarg": 0,
+      "usage": "inspector",
+      "scriptable": false
+    },
+    {
+      "name": "isub",
+      "nbarg": 1,
+      "usage": "isub filename",
+      "scriptable": true
+    },
+    {
+      "name": "jsonmetadata",
+      "nbarg": 1,
+      "usage": "jsonmetadata FITS_file [-stats_from_loaded] [-nostats] [-out=]",
+      "scriptable": true
+    },
+    {
+      "name": "limit",
+      "nbarg": 1,
+      "usage": "limit { -clip | -posrescale | -rescale }",
+      "scriptable": true
+    },
+    {
+      "name": "linear_match",
+      "nbarg": 2,
+      "usage": "linear_match reference low high",
+      "scriptable": true
+    },
+    {
+      "name": "link",
+      "nbarg": 1,
+      "usage": "link basename [-date] [-start=index] [-out=]",
+      "scriptable": true
+    },
+    {
+      "name": "linstretch",
+      "nbarg": 1,
+      "usage": "linstretch -BP= [-sat] [-clipmode=] [channels] [-clipmode=]",
+      "scriptable": true
+    },
+    {
+      "name": "livestack",
+      "nbarg": 1,
+      "usage": "livestack filename",
+      "scriptable": true
+    },
+    {
+      "name": "load",
+      "nbarg": 1,
+      "usage": "load filename[.ext]",
+      "scriptable": true
+    },
+    {
+      "name": "load_seq",
+      "nbarg": 1,
+      "usage": "load_seq sequencename[.ext]",
+      "scriptable": false
+    },
+    {
+      "name": "log",
+      "nbarg": 0,
+      "usage": "log",
+      "scriptable": true
+    },
+    {
+      "name": "ls",
+      "nbarg": 0,
+      "usage": "ls",
+      "scriptable": false
+    },
+    {
+      "name": "merge",
+      "nbarg": 3,
+      "usage": "merge sequence1 sequence2 [sequence3 ...] output_sequence",
+      "scriptable": true
+    },
+    {
+      "name": "merge_cfa",
+      "nbarg": 5,
+      "usage": "merge_cfa file_CFA0 file_CFA1 file_CFA2 file_CFA3 bayerpattern",
+      "scriptable": true
+    },
+    {
+      "name": "mirrorx",
+      "nbarg": 0,
+      "usage": "mirrorx [-bottomup]",
+      "scriptable": true
+    },
+    {
+      "name": "mirrorx_single",
+      "nbarg": 1,
+      "usage": "mirrorx_single image",
+      "scriptable": true
+    },
+    {
+      "name": "mirrory",
+      "nbarg": 0,
+      "usage": "mirrory",
+      "scriptable": true
+    },
+    {
+      "name": "modasinh",
+      "nbarg": 1,
+      "usage": "modasinh -D= [-LP=] [-SP=] [-HP=] [-clipmode=] [-human | -even | -independent | -sat] [channels]",
+      "scriptable": true
+    },
+    {
+      "name": "mtf",
+      "nbarg": 3,
+      "usage": "mtf low mid high [channels]",
+      "scriptable": true
+    },
+    {
+      "name": "neg",
+      "nbarg": 0,
+      "usage": "neg",
+      "scriptable": true
+    },
+    {
+      "name": "new",
+      "nbarg": 3,
+      "usage": "new width height nb_channel [filename]",
+      "scriptable": false
+    },
+    {
+      "name": "nozero",
+      "nbarg": 1,
+      "usage": "nozero level",
+      "scriptable": true
+    },
+    {
+      "name": "offline",
+      "nbarg": 0,
+      "usage": "offline",
+      "scriptable": true
+    },
+    {
+      "name": "offset",
+      "nbarg": 1,
+      "usage": "offset value",
+      "scriptable": true
+    },
+    {
+      "name": "online",
+      "nbarg": 0,
+      "usage": "online",
+      "scriptable": true
+    },
+    {
+      "name": "parse",
+      "nbarg": 1,
+      "usage": "parse str [-r]",
+      "scriptable": true
+    },
+    {
+      "name": "pcc",
+      "nbarg": 0,
+      "usage": "pcc [-limitmag=[+-]] [-catalog=] [-bgtol=lower,upper]",
+      "scriptable": true
+    },
+    {
+      "name": "psf",
+      "nbarg": 0,
+      "usage": "psf [channel]",
+      "scriptable": true
+    },
+    {
+      "name": "pwd",
+      "nbarg": 0,
+      "usage": "pwd",
+      "scriptable": true
+    },
+    {
+      "name": "pyscript",
+      "nbarg": 1,
+      "usage": "pyscript [-async] scriptname.py [script_argv]",
+      "scriptable": true
+    },
+    {
+      "name": "reloadscripts",
+      "nbarg": 0,
+      "usage": "reloadscripts",
+      "scriptable": false
+    },
+    {
+      "name": "requires",
+      "nbarg": 1,
+      "usage": "requires min_version [obsolete_version]",
+      "scriptable": true
+    },
+    {
+      "name": "resample",
+      "nbarg": 1,
+      "usage": "resample { factor | -width= | -height= | -maxdim= } [-interp=] [-noclamp]",
+      "scriptable": true
+    },
+    {
+      "name": "rgradient",
+      "nbarg": 4,
+      "usage": "rgradient xc yc dR dalpha",
+      "scriptable": true
+    },
+    {
+      "name": "rl",
+      "nbarg": 0,
+      "usage": "rl [-loadpsf=] [-alpha=] [-iters=] [-stop=] [-gdstep=] [-tv] [-fh] [-mul]",
+      "scriptable": true
+    },
+    {
+      "name": "rmgreen",
+      "nbarg": 0,
+      "usage": "rmgreen [-nopreserve] [type] [amount]",
+      "scriptable": true
+    },
+    {
+      "name": "rotate",
+      "nbarg": 1,
+      "usage": "rotate degree [-nocrop] [-interp=] [-noclamp]",
+      "scriptable": true
+    },
+    {
+      "name": "rotatePi",
+      "nbarg": 0,
+      "usage": "rotatePi",
+      "scriptable": true
+    },
+    {
+      "name": "satu",
+      "nbarg": 1,
+      "usage": "satu amount [background_factor [hue_range_index]]",
+      "scriptable": true
+    },
+    {
+      "name": "save",
+      "nbarg": 1,
+      "usage": "save filename [-chksum]",
+      "scriptable": true
+    },
+    {
+      "name": "savebmp",
+      "nbarg": 1,
+      "usage": "savebmp filename",
+      "scriptable": true
+    },
+    {
+      "name": "savejpg",
+      "nbarg": 1,
+      "usage": "savejpg filename [quality]",
+      "scriptable": true
+    },
+    {
+      "name": "savejxl",
+      "nbarg": 1,
+      "usage": "savejxl filename [-effort=] [-quality=] [-8bit]",
+      "scriptable": true
+    },
+    {
+      "name": "savepng",
+      "nbarg": 1,
+      "usage": "savepng filename",
+      "scriptable": true
+    },
+    {
+      "name": "savepnm",
+      "nbarg": 1,
+      "usage": "savepnm filename",
+      "scriptable": true
+    },
+    {
+      "name": "savetif",
+      "nbarg": 1,
+      "usage": "savetif filename [-astro] [-deflate]",
+      "scriptable": true
+    },
+    {
+      "name": "savetif32",
+      "nbarg": 1,
+      "usage": "savetif32 filename [-astro] [-deflate]",
+      "scriptable": true
+    },
+    {
+      "name": "savetif8",
+      "nbarg": 1,
+      "usage": "savetif8 filename [-astro] [-deflate]",
+      "scriptable": true
+    },
+    {
+      "name": "sb",
+      "nbarg": 0,
+      "usage": "sb [-loadpsf=] [-alpha=] [-iters=]",
+      "scriptable": true
+    },
+    {
+      "name": "select",
+      "nbarg": 3,
+      "usage": "select sequencename from to",
+      "scriptable": true
+    },
+    {
+      "name": "seqclean",
+      "nbarg": 1,
+      "usage": "seqclean sequencename [-reg] [-stat] [-sel]",
+      "scriptable": true
+    },
+    {
+      "name": "seqcrop",
+      "nbarg": 5,
+      "usage": "seqcrop sequencename x y width height [-prefix=]",
+      "scriptable": true
+    },
+    {
+      "name": "seqheader",
+      "nbarg": 2,
+      "usage": "seqheader sequencename keyword [keyword2 ...] [-sel] [-out=file.csv]",
+      "scriptable": true
+    },
+    {
+      "name": "seqmerge_cfa",
+      "nbarg": 5,
+      "usage": "seqmerge_cfa sequencename0 sequencename1 sequencename2 sequencename3 bayerpattern [-prefixout=]",
+      "scriptable": true
+    },
+    {
+      "name": "seqpsf",
+      "nbarg": 0,
+      "usage": "seqpsf sequencename [channel] [{ -at=x,y | -wcs=ra,dec }] [-followstar]",
+      "scriptable": true
+    },
+    {
+      "name": "seqresample",
+      "nbarg": 1,
+      "usage": "seqresample sequencename { -scale= | -width= | -height= } [-interp=] [-prefix=]",
+      "scriptable": true
+    },
+    {
+      "name": "seqsetmag",
+      "nbarg": 1,
+      "usage": "seqsetmag magnitude",
+      "scriptable": false
+    },
+    {
+      "name": "seqstat",
+      "nbarg": 2,
+      "usage": "seqstat sequencename output_file [option] [-cfa]",
+      "scriptable": true
+    },
+    {
+      "name": "sequnsetmag",
+      "nbarg": 0,
+      "usage": "sequnsetmag",
+      "scriptable": false
+    },
+    {
+      "name": "set",
+      "nbarg": 1,
+      "usage": "set { -import=inifilepath | variable=value }",
+      "scriptable": true
+    },
+    {
+      "name": "set16bits",
+      "nbarg": 0,
+      "usage": "set16bits",
+      "scriptable": true
+    },
+    {
+      "name": "set32bits",
+      "nbarg": 0,
+      "usage": "set32bits",
+      "scriptable": true
+    },
+    {
+      "name": "setcompress",
+      "nbarg": 1,
+      "usage": "setcompress 0/1 [-type=] [q]",
+      "scriptable": true
+    },
+    {
+      "name": "setcpu",
+      "nbarg": 1,
+      "usage": "setcpu number",
+      "scriptable": true
+    },
+    {
+      "name": "setext",
+      "nbarg": 1,
+      "usage": "setext extension",
+      "scriptable": true
+    },
+    {
+      "name": "setfindstar",
+      "nbarg": 0,
+      "usage": "setfindstar [reset] [-radius=] [-sigma=] [-roundness=] [-focal=] [-pixelsize=] [-convergence=] [ [-gaussian] | [-moffat] ] [-minbeta=] [-relax=on|off] [-minA=] [-maxA=] [-maxR=]",
+      "scriptable": true
+    },
+    {
+      "name": "setmag",
+      "nbarg": 1,
+      "usage": "setmag magnitude",
+      "scriptable": false
+    },
+    {
+      "name": "setmem",
+      "nbarg": 1,
+      "usage": "setmem ratio",
+      "scriptable": true
+    },
+    {
+      "name": "setphot",
+      "nbarg": 0,
+      "usage": "setphot [-inner=20] [-outer=30] [-aperture=10] [-dyn_ratio=4.0] [-gain=2.3] [-min_val=0] [-max_val=60000]",
+      "scriptable": true
+    },
+    {
+      "name": "setref",
+      "nbarg": 2,
+      "usage": "setref sequencename image_number",
+      "scriptable": true
+    },
+    {
+      "name": "show",
+      "nbarg": 1,
+      "usage": "show [-clear] [{ -list=file.csv | [name] RA Dec }] [-nolog] [-notag]",
+      "scriptable": false
+    },
+    {
+      "name": "spcc",
+      "nbarg": 0,
+      "usage": "spcc [-limitmag=[+-]] [ { -monosensor= [ -rfilter= ] [-gfilter=] [-bfilter=] | -oscsensor= [-oscfilter=] [-osclpf=] } ] [-whiteref=] [ -narrowband [-rwl=] [-gwl=] [-bwl=] [-rbw=] [-gbw=] [-bbw=] ] [-bgtol=lower,upper] [ -atmos [-obsheight=] { [-pressure=] | [-slp=] } ]",
+      "scriptable": true
+    },
+    {
+      "name": "spcc_list",
+      "nbarg": 1,
+      "usage": "spcc_list { oscsensor | monosensor | redfilter | greenfilter | bluefilter | oscfilter | osclpf | whiteref }",
+      "scriptable": true
+    },
+    {
+      "name": "split",
+      "nbarg": 3,
+      "usage": "split file1 file2 file3 [-hsl | -hsv | -lab]",
+      "scriptable": true
+    },
+    {
+      "name": "split_cfa",
+      "nbarg": 0,
+      "usage": "split_cfa",
+      "scriptable": true
+    },
+    {
+      "name": "starnet",
+      "nbarg": 0,
+      "usage": "starnet [-stretch] [-upscale] [-stride=value] [-nostarmask]",
+      "scriptable": true
+    },
+    {
+      "name": "start_ls",
+      "nbarg": 0,
+      "usage": "start_ls [-dark=filename] [-flat=filename] [-rotate] [-32bits]",
+      "scriptable": true
+    },
+    {
+      "name": "stat",
+      "nbarg": 0,
+      "usage": "stat [-cfa] [main]",
+      "scriptable": true
+    },
+    {
+      "name": "stop_ls",
+      "nbarg": 0,
+      "usage": "stop_ls",
+      "scriptable": true
+    },
+    {
+      "name": "subsky",
+      "nbarg": 1,
+      "usage": "subsky { -rbf | degree } [-dither] [-samples=20] [-tolerance=1.0] [-smooth=0.5] [-existing]",
+      "scriptable": true
+    },
+    {
+      "name": "synthstar",
+      "nbarg": 0,
+      "usage": "synthstar",
+      "scriptable": true
+    },
+    {
+      "name": "threshlo",
+      "nbarg": 1,
+      "usage": "threshlo level",
+      "scriptable": true
+    },
+    {
+      "name": "threshhi",
+      "nbarg": 1,
+      "usage": "threshi level",
+      "scriptable": true
+    },
+    {
+      "name": "thresh",
+      "nbarg": 2,
+      "usage": "thresh lo hi",
+      "scriptable": true
+    },
+    {
+      "name": "tilt",
+      "nbarg": 0,
+      "usage": "tilt [clear]",
+      "scriptable": false
+    },
+    {
+      "name": "trixel",
+      "nbarg": 0,
+      "usage": "trixel [-p]",
+      "scriptable": true
+    },
+    {
+      "name": "unclipstars",
+      "nbarg": 0,
+      "usage": "unclipstars",
+      "scriptable": true
+    },
+    {
+      "name": "unpurple",
+      "nbarg": 0,
+      "usage": "unpurple [-starmask] [-blue=value] [-thresh=value]",
+      "scriptable": true
+    },
+    {
+      "name": "unselect",
+      "nbarg": 3,
+      "usage": "unselect sequencename from to",
+      "scriptable": true
+    },
+    {
+      "name": "unsetmag",
+      "nbarg": 0,
+      "usage": "unsetmag",
+      "scriptable": false
+    },
+    {
+      "name": "unsharp",
+      "nbarg": 2,
+      "usage": "unsharp sigma multi",
+      "scriptable": true
+    },
+    {
+      "name": "visu",
+      "nbarg": 2,
+      "usage": "visu low high",
+      "scriptable": false
+    },
+    {
+      "name": "wavelet",
+      "nbarg": 1,
+      "usage": "wavelet nbr_layers type",
+      "scriptable": true
+    },
+    {
+      "name": "wiener",
+      "nbarg": 0,
+      "usage": "wiener [-loadpsf=] [-alpha=]",
+      "scriptable": true
+    },
+    {
+      "name": "wrecons",
+      "nbarg": 2,
+      "usage": "wrecons c1 c2 c3 ...",
+      "scriptable": true
+    }
+  ]
+}
