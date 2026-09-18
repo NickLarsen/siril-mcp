@@ -116,3 +116,7 @@ See [PLAN.md](PLAN.md) section **Canonical test queries**. Quick smoke:
 ## Option C (later)
 
 After this proves useful, promote the same tool contract into a built-in Siril control socket (see PLAN.md Phase 3).
+
+## License
+
+[GPL-3.0-or-later](LICENSE.md) — same as [Siril](https://siril.org).
